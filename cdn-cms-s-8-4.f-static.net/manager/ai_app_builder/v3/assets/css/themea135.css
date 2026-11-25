@@ -1,0 +1,53 @@
+/* Explain: Theme design tokens (colors, fonts, shapes) — single source of truth. */
+/* ===== WIKIZE — JETONS DE DESIGN (SOURCE UNIQUE) ===== */
+:root {
+    /* --- COULEURS DE MARQUE --- */
+    --primary-color: #0A3D91;
+    --primary-hover: #0B4ED8;
+    --secondary-color: #0B4ED8;
+    --accent-color: #FFC107;
+    --accent-strong: #EAB308;
+    --accent-soft: #FFD700;
+    --whatsapp-color: #25D366;
+
+    /* --- SURFACES --- */
+    --background-color: #FFFFFF;
+    --surface-color: #F4F6FB;
+    --surface-2: #E7EEFB;
+    --border-color: #E2E8F5;
+
+    /* --- TEXTES --- */
+    --text-color: #111827;
+    --text-muted: #5B6478;
+    --text-on-primary: #FFFFFF;
+    --text-on-accent: #14213D;
+
+    /* --- TYPOGRAPHIE --- */
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* --- FORMES --- */
+    --radius-sm: 0.5rem;
+    --radius-md: 1rem;
+    --radius-lg: 1.5rem;
+    --radius-pill: 999px;
+
+    /* --- OMBRES --- */
+    --shadow-sm: 0 2px 8px rgba(10, 61, 145, 0.08);
+    --shadow-md: 0 10px 30px rgba(10, 61, 145, 0.12);
+    --shadow-lg: 0 24px 60px rgba(10, 61, 145, 0.18);
+    --shadow-accent: 0 12px 30px rgba(255, 193, 7, 0.38);
+}
+
+/* ===== MODE SOMBRE (OPTIONNEL) ===== */
+html[data-theme="dark"] {
+    --background-color: #0B1220;
+    --surface-color: #121A2B;
+    --surface-2: #172033;
+    --border-color: #24304A;
+    --text-color: #F3F6FC;
+    --text-muted: #A5B0C6;
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.45);
+    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.5);
+    --shadow-lg: 0 24px 60px rgba(0, 0, 0, 0.55);
+}

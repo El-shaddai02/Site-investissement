@@ -1,0 +1,951 @@
+<!-- Explain: Page shell for news feed page, loads auto-updated articles. -->
+
+<!doctype html>
+<html lang="fr" class="scroll-smooth">
+  <meta
+    http-equiv="content-type"
+    content="text/html;charset=UTF-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <script>
+      window.isManagment = "1";
+    </script>
+    <base href="" />
+    <script>
+      window.IsManagment = "1";
+      window.APP_PROJECT_ID = "a5dc9972e99b36e69279ca40160e03e0";
+      window.__CDN_BASE_URL__ =
+        "index.html\/\/cdn-cms-s-8-4.f-static.net\/manager\/ai_app_builder\/v3\/assets\/";
+      window.APP_CURRENCIES = {
+        isActive: false,
+        currencies: {
+          USD: {
+            code: "USD",
+            label: "United States Dollar",
+            symbol: "\u0026#36;",
+            symbolFirst: true,
+            rate: 1,
+            isDefault: true,
+          },
+        },
+      };
+      window.APP_TAX = {
+        productsTax: "",
+        regions: [
+          {
+            id: 384937188,
+            regionName: "Rest of the World",
+            countries: { REST_WORLD: {} },
+            tax: {
+              option: "differentTax",
+              differentTax: { REST_WORLD: 0 },
+              basedOn: "shippingAddress",
+              taxCalAfterShipping: false,
+            },
+          },
+        ],
+        countryOptions: [
+          {
+            code: "REST_WORLD",
+            name: "REST_WORLD",
+            states: [],
+            requiresState: false,
+          },
+        ],
+      };
+      window.APP_BUILDER_BASE_PATH = "\/manager\/ai_app_builder\/v3";
+      window.APP_BUILDER_REALTIME_ENABLED = true;
+    </script>
+    <link
+      rel="stylesheet"
+      href="../cdn-cms-s-8-4.f-static.net/versions/2/system_mini/css/minimize_appBuilder_v351a9.css?v=vc1795534278"
+      type="text/css"
+      crossorigin="anonymous"
+    />
+    <link rel="dns-prefetch" href="https://images.cdn-files-a.com/" />
+    <!-- Regular Meta Info -->
+    <title>Actualité mobilité, transport et innovation — WIKIZE</title>
+    <meta
+      name="description"
+      content="Suivez l&#039;actualité de la mobilité, du transport, de l&#039;innovation et de l&#039;IA en Afrique et dans le monde, mise à jour automatiquement par WIKIZE."
+    />
+    <meta name="keywords" content="actualité mobilité Afrique" />
+    <link rel="canonical" href="actualite.html" />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="../images.cdn-files-a.com/admin/InterfaceStatisFiles/allOther/ads/site123/brand_kit_2026/SITE123-Logo-2026/web/icon-5125ce5.png?aspect_ratio=1:1&amp;width=48&amp;format=png"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="../images.cdn-files-a.com/admin/InterfaceStatisFiles/allOther/ads/site123/brand_kit_2026/SITE123-Logo-2026/web/icon-5125ce5.png?aspect_ratio=1:1&amp;width=48&amp;format=png"
+      type="image/x-icon"
+    />
+    <!-- Facebook Meta Info -->
+    <meta property="og:url" content="actualite.html" />
+    <meta
+      property="og:image"
+      content="../files.cdn-files-a.com/admin/system_photos_stock/normal_695ffd7aa340bc4e7.jpg?ratio=16:9&amp;format=avif"
+    />
+    <meta
+      property="og:description"
+      content="Suivez l&#039;actualité de la mobilité, du transport, de l&#039;innovation et de l&#039;IA en Afrique et dans le monde, mise à jour automatiquement par WIKIZE."
+    />
+    <meta
+      property="og:title"
+      content="Actualité mobilité, transport et innovation — WIKIZE"
+    />
+    <meta
+      property="og:site_name"
+      content="Actualité mobilité, transport et innovation — WIKIZE"
+    />
+    <meta property="og:see_also" content="index.html" />
+    <!-- Google+ Meta Info -->
+    <meta
+      itemprop="name"
+      content="Actualité mobilité, transport et innovation — WIKIZE"
+    />
+    <meta
+      itemprop="description"
+      content="Suivez l&#039;actualité de la mobilité, du transport, de l&#039;innovation et de l&#039;IA en Afrique et dans le monde, mise à jour automatiquement par WIKIZE."
+    />
+    <meta
+      itemprop="image"
+      content="../files.cdn-files-a.com/admin/system_photos_stock/normal_695ffd7aa340bc4e7.jpg?ratio=16:9&amp;format=avif"
+    />
+    <!-- Twitter Meta Info -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="actualite.html" />
+    <meta
+      name="twitter:title"
+      content="Actualité mobilité, transport et innovation — WIKIZE"
+    />
+    <meta
+      name="twitter:description"
+      content="Suivez l&#039;actualité de la mobilité, du transport, de l&#039;innovation et de l&#039;IA en Afrique et dans le monde, mise à jour automatiquement par WIKIZE."
+    />
+    <meta
+      name="twitter:image"
+      content="../files.cdn-files-a.com/admin/system_photos_stock/normal_695ffd7aa340bc4e7.jpg?ratio=16:9&amp;format=avif"
+    />
+
+    <!-- Explain: Shared head: fonts, Tailwind/daisyUI CDN, app CSS links. -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="../cdn-cms-s-8-4.f-static.net/manager/ai_app_builder/v3/assets/minimize_css/actualitea135.css?t=css_y254_67566533&amp;w=12705255"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../cdn-cms-s-8-4.f-static.net/manager/ai_app_builder/v3/assets/css/themea135.css?t=css_y254_67566533&amp;w=12705255"
+    />
+    <link
+      rel="stylesheet"
+      href="../cdn-cms-s-8-4.f-static.net/manager/ai_app_builder/v3/assets/css/maina135.css?t=css_y254_67566533&amp;w=12705255"
+    />
+    <link
+      rel="stylesheet"
+      href="../cdn-cms-s-8-4.f-static.net/manager/ai_app_builder/v3/assets/css/componentsa135.css?t=css_y254_67566533&amp;w=12705255"
+    />
+    <link
+      rel="stylesheet"
+      href="../cdn-cms-s-8-4.f-static.net/manager/ai_app_builder/v3/assets/css/layouta135.css?t=css_y254_67566533&amp;w=12705255"
+    />
+  </head>
+  <body
+    class="min-h-screen bg-[var(--background-color)] text-[var(--text-color)]"
+  >
+    <!-- Explain: Shared fixed header with announcement bar and main navigation. -->
+    <!-- ===== EN-TÊTE WIKIZE — BARRE D'ANNONCE + MENU FIXE ===== -->
+    <div class="site-topbar" id="siteTopbar">
+      <div class="announcement-bar" id="announcement">
+        <p>
+          Nouveau : 1000 FCFA offerts à l'inscription —
+          <a href="compte.html">Créez votre compte gratuitement</a>
+        </p>
+        <button
+          type="button"
+          class="announcement-bar__close"
+          id="announcementClose"
+          aria-label="Fermer l'annonce"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <header class="site-header">
+        <nav class="site-nav" aria-label="Navigation principale">
+          <a href="#" class="site-brand">
+            <img
+              class="site-brand__logo"
+              alt="Logo WIKIZE"
+              width="46"
+              height="46"
+              src="../files.cdn-files-a.com/uploads/12705255/800_6b062bf06b22ddc45.avif?ratio=7:8&amp;format=avif"
+              srcset="
+                ../files.cdn-files-a.com/uploads/12705255/100_6b062bf06b22ddc45.avif?ratio=7:8&amp;format=avif   100w,
+                ../files.cdn-files-a.com/uploads/12705255/400_6b062bf06b22ddc45.avif?ratio=7:8&amp;format=avif   400w,
+                ../files.cdn-files-a.com/uploads/12705255/800_6b062bf06b22ddc45.avif?ratio=7:8&amp;format=avif   800w,
+                ../files.cdn-files-a.com/uploads/12705255/1200_6b062bf06b22ddc45.avif?ratio=7:8&amp;format=avif 1200w,
+                ../files.cdn-files-a.com/uploads/12705255/1600_6b062bf06b22ddc45.avif?ratio=7:8&amp;format=avif 1600w,
+                ../files.cdn-files-a.com/uploads/12705255/2000_6b062bf06b22ddc45.avif?ratio=7:8&amp;format=avif 2000w
+              "
+              sizes="100vw"
+              data-sizes-auto="1"
+            />
+            <span class="site-brand__text">WIKIZE</span>
+          </a>
+
+          <button
+            type="button"
+            class="nav-toggle"
+            id="navToggle"
+            aria-label="Ouvrir le menu"
+            aria-expanded="false"
+            aria-controls="navPanel"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <div class="nav-panel" id="navPanel">
+            <ul class="nav-menu">
+              <li><a class="nav-link" href="#">Accueil</a></li>
+              <li><a class="nav-link" href="velos.html">Vélos</a></li>
+              <li><a class="nav-link" href="motos.html">Motos</a></li>
+              <li><a class="nav-link" href="voitures.html">Voitures</a></li>
+              <li><a class="nav-link" href="niveaux.html">Niveaux</a></li>
+              <li><a class="nav-link" href="offres.html">Offres</a></li>
+              <li><a class="nav-link" href="actualite.html">Actualité</a></li>
+              <li class="nav-dropdown">
+                <button
+                  type="button"
+                  class="nav-link nav-dropdown__trigger"
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                >
+                  Plus <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <ul class="nav-dropdown__menu">
+                  <li><a href="a-propos.html">À propos</a></li>
+                  <li><a href="faq.html">FAQ</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="retrait.html">Retrait</a></li>
+                  <li><a href="parrainage.html">Parrainage</a></li>
+                  <li><a href="admin.html">Espace admin</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="nav-actions">
+              <button
+                type="button"
+                class="btn-wk btn-wk--ghost btn-wk--sm"
+                id="themeToggle"
+                aria-label="Basculer le mode sombre"
+              >
+                <i class="fa-solid fa-moon"></i>
+              </button>
+              <a class="btn-wk btn-wk--ghost btn-wk--sm" href="wallet.html"
+                ><i class="fa-solid fa-wallet"></i> Mon wallet</a
+              >
+              <a
+                class="btn-wk btn-wk--accent btn-wk--sm"
+                href="compte.html"
+                id="navAuthLink"
+                >S'inscrire / Se connecter</a
+              >
+            </div>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <main id="top">
+      <!-- Explain: News list section with category filters, search and article cards. -->
+      <!-- ===== SECTION ACTUALITÉ — VEILLE MOBILITÉ, TRANSPORT, INNOVATION, IA ===== -->
+      <section class="section-wk section-wk--surface">
+        <div class="container-wk">
+          <header class="section-wk__head reveal">
+            <span class="badge-wk">Actualité</span>
+            <h1>L'actualité de la mobilité</h1>
+            <p>
+              Transport, innovation et intelligence artificielle en Afrique et
+              dans le monde — mise à jour automatiquement chaque jour.
+            </p>
+          </header>
+
+          <div class="filter-bar">
+            <button
+              type="button"
+              class="filter-chip is-active"
+              data-news-filter="all"
+            >
+              Tout
+            </button>
+            <button
+              type="button"
+              class="filter-chip"
+              data-news-filter="Mobilité"
+            >
+              Mobilité
+            </button>
+            <button
+              type="button"
+              class="filter-chip"
+              data-news-filter="Transport"
+            >
+              Transport
+            </button>
+            <button
+              type="button"
+              class="filter-chip"
+              data-news-filter="Innovation"
+            >
+              Innovation
+            </button>
+            <button type="button" class="filter-chip" data-news-filter="IA">
+              IA
+            </button>
+            <button
+              type="button"
+              class="filter-chip"
+              data-news-filter="Afrique"
+            >
+              Afrique
+            </button>
+            <div class="filter-sort">
+              <input
+                class="wk-input"
+                type="search"
+                id="newsSearch"
+                placeholder="Rechercher un article…"
+                aria-label="Rechercher un article"
+                style="width: auto; min-width: 220px"
+              />
+            </div>
+          </div>
+
+          <div class="grid-wk grid-wk--3" id="newsGrid">
+            <article
+              class="news-card reveal"
+              data-cat="Mobilité"
+              data-title="Le Togo accélère sur la mobilité électrique urbaine"
+            >
+              <div
+                class="media-frame"
+                style="border-radius: 0; aspect-ratio: 16 / 9"
+              >
+                <img
+                  alt="Le Togo accélère sur la mobilité électrique urbaine"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                  src="../files.cdn-files-a.com/admin/system_photos_stock/800_695f6327ec9c9c4e7.avif?ratio=16:9&amp;format=avif"
+                  srcset="
+                    ../files.cdn-files-a.com/admin/system_photos_stock/100_695f6327ec9c9c4e7.avif?ratio=16:9&amp;format=avif   100w,
+                    ../files.cdn-files-a.com/admin/system_photos_stock/400_695f6327ec9c9c4e7.avif?ratio=16:9&amp;format=avif   400w,
+                    ../files.cdn-files-a.com/admin/system_photos_stock/800_695f6327ec9c9c4e7.avif?ratio=16:9&amp;format=avif   800w,
+                    ../files.cdn-files-a.com/admin/system_photos_stock/1200_695f6327ec9c9c4e7.avif?ratio=16:9&amp;format=avif 1200w,
+                    ../files.cdn-files-a.com/admin/system_photos_stock/1600_695f6327ec9c9c4e7.avif?ratio=16:9&amp;format=avif 1600w,
+                    ../files.cdn-files-a.com/admin/system_photos_stock/2000_695f6327ec9c9c4e7.avif?ratio=16:9&amp;format=avif 2000w
+                  "
+                  data-sizes-auto="1"
+                />
+              </div>
+              <div class="news-card__body">
+                <div class="news-card__meta">
+                  <span class="badge-wk badge-wk--accent">Mobilité</span>
+                  <span><i class="fa-regular fa-calendar"></i> 24/11/2026</span>
+                  <span
+                    ><i class="fa-solid fa-newspaper"></i> Veille WIKIZE</span
+                  >
+                </div>
+                <h2 class="news-card__title">
+                  Le Togo accélère sur la mobilité électrique urbaine
+                </h2>
+                <p class="news-card__text">
+                  De nouvelles stations de recharge et des incitations fiscales
+                  encouragent l'adoption des deux-roues électriques à Lomé. Les
+                  opérateurs de location misent sur des flottes plus propres.
+                </p>
+                <a
+                  class="btn-wk btn-wk--primary"
+                  style="margin-top: auto"
+                  href="https://news.google.com/search?q=mobilit%C3%A9%20%C3%A9lectrique%20togo"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i> Lire
+                  l'original</a
+                >
+              </div>
+            </article>
+            <article
+              class="news-card reveal"
+              data-cat="Transport"
+              data-title="Lomé teste ses premiers bus électriques"
+            >
+              <div
+                class="media-frame"
+                style="border-radius: 0; aspect-ratio: 16 / 9"
+              >
+                <img
+                  alt="Lomé teste ses premiers bus électriques"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                  src="../files.cdn-files-a.com/admin/system_photos_stock/800_6960327203702c4e7.avif?ratio=16:9&amp;format=avif"
+                  srcset="
+                    ../files.cdn-files-a.com/admin/system_photos_stock/100_6960327203702c4e7.avif?ratio=16:9&amp;format=avif   100w,
+                    ../files.cdn-files-a.com/admin/system_photos_stock/400_6960327203702c4e7.avif?ratio=16:9&amp;format=avif   400w,
+                    ../files.cdn-files-a.com/admin/system_photos_stock/800_6960327203702c4e7.avif?ratio=16:9&amp;format=avif   800w,
+                    ../files.cdn-files-a.com/admin/system_photos_stock/1200_6960327203702c4e7.avif?ratio=16:9&amp;format=avif 1200w,
+                    ../files.cdn-files-a.com/admin/system_photos_stock/1600_6960327203702c4e7.avif?ratio=16:9&amp;format=avif 1600w,
+                    ../files.cdn-files-a.com/admin/system_photos_stock/2000_6960327203702c4e7.avif?ratio=16:9&amp;format=avif 2000w
+                  "
+                  data-sizes-auto="1"
+                />
+              </div>
+              <div class="news-card__body">
+                <div class="news-card__meta">
+                  <span class="badge-wk badge-wk--accent">Transport</span>
+                  <span><i class="fa-regular fa-calendar"></i> 23/11/2026</span>
+                  <span
+                    ><i class="fa-solid fa-newspaper"></i> Veille WIKIZE</span
+                  >
+                </div>
+                <h2 class="news-card__title">
+                  Lomé teste ses premiers bus électriques
+                </h2>
+                <p class="news-card__text">
+                  La capitale togolaise expérimente une ligne de bus électriques
+                  pour réduire les émissions et le coût du transport public. Un
+                  premier bilan est attendu dans six mois.
+                </p>
+                <a
+                  class="btn-wk btn-wk--primary"
+                  style="margin-top: auto"
+                  href="https://news.google.com/search?q=bus%20%C3%A9lectrique%20lom%C3%A9"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i> Lire
+                  l'original</a
+                >
+              </div>
+            </article>
+            <article
+              class="news-card reveal"
+              data-cat="Innovation"
+              data-title="Afrique : le paiement mobile booste la location de véhicules"
+            >
+              <div
+                class="media-frame"
+                style="border-radius: 0; aspect-ratio: 16 / 9"
+              >
+                <img
+                  alt="Afrique : le paiement mobile booste la location de véhicules"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                  src="../files.cdn-files-a.com/admin/system_photos_stock/800_696778719e497c4e7.avif?ratio=16:9&amp;format=avif"
+                  srcset="
+                    ../files.cdn-files-a.com/admin/system_photos_stock/100_696778719e497c4e7.avif?ratio=16:9&amp;format=avif   100w,
+                    ../files.cdn-files-a.com/admin/system_photos_stock/400_696778719e497c4e7.avif?ratio=16:9&amp;format=avif   400w,
+                    ../files.cdn-files-a.com/admin/system_photos_stock/800_696778719e497c4e7.avif?ratio=16:9&amp;format=avif   800w,
+                    ../files.cdn-files-a.com/admin/system_photos_stock/1200_696778719e497c4e7.avif?ratio=16:9&amp;format=avif 1200w,
+                    ../files.cdn-files-a.com/admin/system_photos_stock/1600_696778719e497c4e7.avif?ratio=16:9&amp;format=avif 1600w,
+                    ../files.cdn-files-a.com/admin/system_photos_stock/2000_696778719e497c4e7.avif?ratio=16:9&amp;format=avif 2000w
+                  "
+                  data-sizes-auto="1"
+                />
+              </div>
+              <div class="news-card__body">
+                <div class="news-card__meta">
+                  <span class="badge-wk badge-wk--accent">Innovation</span>
+                  <span><i class="fa-regular fa-calendar"></i> 22/11/2026</span>
+                  <span
+                    ><i class="fa-solid fa-newspaper"></i> Veille WIKIZE</span
+                  >
+                </div>
+                <h2 class="news-card__title">
+                  Afrique : le paiement mobile booste la location de véhicules
+                </h2>
+                <p class="news-card__text">
+                  Le paiement mobile simplifie l'accès à la location de
+                  deux-roues et de voitures sur le continent. Les plateformes
+                  enregistrent une hausse nette des réservations payées depuis
+                  un mobile.
+                </p>
+                <a
+                  class="btn-wk btn-wk--primary"
+                  style="margin-top: auto"
+                  href="https://news.google.com/search?q=paiement%20mobile%20location%20afrique"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i> Lire
+                  l'original</a
+                >
+              </div>
+            </article>
+            <article
+              class="news-card reveal"
+              data-cat="IA"
+              data-title="L&#039;IA optimise les itinéraires des motos-taxis à Abidjan"
+            >
+              <div
+                class="media-frame"
+                style="border-radius: 0; aspect-ratio: 16 / 9"
+              >
+                <img
+                  alt="L&#039;IA optimise les itinéraires des motos-taxis à Abidjan"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                  src="../cdn-cms.f-static.net/ready_uploads/media/4393251/800_5e7f86a64cc0e519d.avif?ratio=3:2&amp;format=avif"
+                  srcset="
+                    ../cdn-cms.f-static.net/ready_uploads/media/4393251/100_5e7f86a64cc0e519d.avif?ratio=3:2&amp;format=avif   100w,
+                    ../cdn-cms.f-static.net/ready_uploads/media/4393251/400_5e7f86a64cc0e519d.avif?ratio=3:2&amp;format=avif   400w,
+                    ../cdn-cms.f-static.net/ready_uploads/media/4393251/800_5e7f86a64cc0e519d.avif?ratio=3:2&amp;format=avif   800w,
+                    ../cdn-cms.f-static.net/ready_uploads/media/4393251/1200_5e7f86a64cc0e519d.avif?ratio=3:2&amp;format=avif 1200w,
+                    ../cdn-cms.f-static.net/ready_uploads/media/4393251/1600_5e7f86a64cc0e519d.avif?ratio=3:2&amp;format=avif 1600w,
+                    ../cdn-cms.f-static.net/ready_uploads/media/4393251/2000_5e7f86a64cc0e519d.avif?ratio=3:2&amp;format=avif 2000w
+                  "
+                  data-sizes-auto="1"
+                />
+              </div>
+              <div class="news-card__body">
+                <div class="news-card__meta">
+                  <span class="badge-wk badge-wk--accent">IA</span>
+                  <span><i class="fa-regular fa-calendar"></i> 21/11/2026</span>
+                  <span
+                    ><i class="fa-solid fa-newspaper"></i> Veille WIKIZE</span
+                  >
+                </div>
+                <h2 class="news-card__title">
+                  L&#039;IA optimise les itinéraires des motos-taxis à Abidjan
+                </h2>
+                <p class="news-card__text">
+                  Des applications s'appuient sur l'intelligence artificielle
+                  pour réduire les temps d'attente et la consommation de
+                  carburant. Les chauffeurs y gagnent en revenus quotidiens.
+                </p>
+                <a
+                  class="btn-wk btn-wk--primary"
+                  style="margin-top: auto"
+                  href="https://news.google.com/search?q=intelligence%20artificielle%20moto%20taxi%20abidjan"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i> Lire
+                  l'original</a
+                >
+              </div>
+            </article>
+            <article
+              class="news-card reveal"
+              data-cat="Mobilité"
+              data-title="Vélos électriques : la nouvelle star des villes africaines"
+            >
+              <div
+                class="media-frame"
+                style="border-radius: 0; aspect-ratio: 16 / 9"
+              >
+                <img
+                  alt="Vélos électriques : la nouvelle star des villes africaines"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                  src="../files.cdn-files-a.com/admin/system_photos_stock/800_6978df3cca397c4e7.avif?ratio=16:9&amp;format=avif"
+                  srcset="
+                    ../files.cdn-files-a.com/admin/system_photos_stock/100_6978df3cca397c4e7.avif?ratio=16:9&amp;format=avif   100w,
+                    ../files.cdn-files-a.com/admin/system_photos_stock/400_6978df3cca397c4e7.avif?ratio=16:9&amp;format=avif   400w,
+                    ../files.cdn-files-a.com/admin/system_photos_stock/800_6978df3cca397c4e7.avif?ratio=16:9&amp;format=avif   800w,
+                    ../files.cdn-files-a.com/admin/system_photos_stock/1200_6978df3cca397c4e7.avif?ratio=16:9&amp;format=avif 1200w,
+                    ../files.cdn-files-a.com/admin/system_photos_stock/1600_6978df3cca397c4e7.avif?ratio=16:9&amp;format=avif 1600w,
+                    ../files.cdn-files-a.com/admin/system_photos_stock/2000_6978df3cca397c4e7.avif?ratio=16:9&amp;format=avif 2000w
+                  "
+                  data-sizes-auto="1"
+                />
+              </div>
+              <div class="news-card__body">
+                <div class="news-card__meta">
+                  <span class="badge-wk badge-wk--accent">Mobilité</span>
+                  <span><i class="fa-regular fa-calendar"></i> 20/11/2026</span>
+                  <span
+                    ><i class="fa-solid fa-newspaper"></i> Veille WIKIZE</span
+                  >
+                </div>
+                <h2 class="news-card__title">
+                  Vélos électriques : la nouvelle star des villes africaines
+                </h2>
+                <p class="news-card__text">
+                  Plus économes et plus rapides dans les embouteillages, les
+                  vélos à assistance électrique séduisent citadins et livreurs.
+                  Les loueurs multiplient les offres à la journée.
+                </p>
+                <a
+                  class="btn-wk btn-wk--primary"
+                  style="margin-top: auto"
+                  href="https://news.google.com/search?q=v%C3%A9lo%20%C3%A9lectrique%20ville%20afrique"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i> Lire
+                  l'original</a
+                >
+              </div>
+            </article>
+            <article
+              class="news-card reveal"
+              data-cat="Transport"
+              data-title="Sécurité routière : de nouvelles normes moto en Afrique de l&#039;Ouest"
+            >
+              <div
+                class="media-frame"
+                style="border-radius: 0; aspect-ratio: 16 / 9"
+              >
+                <img
+                  alt="Sécurité routière : de nouvelles normes moto en Afrique de l&#039;Ouest"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                  src="../files.cdn-files-a.com/admin/system_photos_stock/800_6aee20c762688c4e7.avif?ratio=16:9&amp;format=avif"
+                  srcset="
+                    ../files.cdn-files-a.com/admin/system_photos_stock/100_6aee20c762688c4e7.avif?ratio=16:9&amp;format=avif   100w,
+                    ../files.cdn-files-a.com/admin/system_photos_stock/400_6aee20c762688c4e7.avif?ratio=16:9&amp;format=avif   400w,
+                    ../files.cdn-files-a.com/admin/system_photos_stock/800_6aee20c762688c4e7.avif?ratio=16:9&amp;format=avif   800w,
+                    ../files.cdn-files-a.com/admin/system_photos_stock/1200_6aee20c762688c4e7.avif?ratio=16:9&amp;format=avif 1200w,
+                    ../files.cdn-files-a.com/admin/system_photos_stock/1600_6aee20c762688c4e7.avif?ratio=16:9&amp;format=avif 1600w,
+                    ../files.cdn-files-a.com/admin/system_photos_stock/2000_6aee20c762688c4e7.avif?ratio=16:9&amp;format=avif 2000w
+                  "
+                  data-sizes-auto="1"
+                />
+              </div>
+              <div class="news-card__body">
+                <div class="news-card__meta">
+                  <span class="badge-wk badge-wk--accent">Transport</span>
+                  <span><i class="fa-regular fa-calendar"></i> 19/11/2026</span>
+                  <span
+                    ><i class="fa-solid fa-newspaper"></i> Veille WIKIZE</span
+                  >
+                </div>
+                <h2 class="news-card__title">
+                  Sécurité routière : de nouvelles normes moto en Afrique de
+                  l&#039;Ouest
+                </h2>
+                <p class="news-card__text">
+                  Plusieurs pays renforcent les contrôles sur les casques et
+                  l'entretien des deux-roues. Une mesure saluée par les
+                  professionnels de la location.
+                </p>
+                <a
+                  class="btn-wk btn-wk--primary"
+                  style="margin-top: auto"
+                  href="https://news.google.com/search?q=s%C3%A9curit%C3%A9%20routi%C3%A8re%20moto%20afrique%20ouest"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i> Lire
+                  l'original</a
+                >
+              </div>
+            </article>
+          </div>
+
+          <p
+            class="wk-hint"
+            id="newsStatus"
+            style="text-align: center; margin-top: 1.4rem"
+            role="status"
+          ></p>
+        </div>
+        <!-- Explain: Reusable WIKIZE logo + copyright signature placed at section bottoms. -->
+        <!-- ===== SIGNATURE WIKIZE (BAS DE CHAQUE SECTION) ===== -->
+        <div class="wikize-signature">
+          <img
+            alt="WIKIZE"
+            width="26"
+            height="26"
+            src="../files.cdn-files-a.com/uploads/12705255/800_6b062bf06b22ddc45.avif?ratio=7:8&amp;format=avif"
+            srcset="
+              ../files.cdn-files-a.com/uploads/12705255/100_6b062bf06b22ddc45.avif?ratio=7:8&amp;format=avif   100w,
+              ../files.cdn-files-a.com/uploads/12705255/400_6b062bf06b22ddc45.avif?ratio=7:8&amp;format=avif   400w,
+              ../files.cdn-files-a.com/uploads/12705255/800_6b062bf06b22ddc45.avif?ratio=7:8&amp;format=avif   800w,
+              ../files.cdn-files-a.com/uploads/12705255/1200_6b062bf06b22ddc45.avif?ratio=7:8&amp;format=avif 1200w,
+              ../files.cdn-files-a.com/uploads/12705255/1600_6b062bf06b22ddc45.avif?ratio=7:8&amp;format=avif 1600w,
+              ../files.cdn-files-a.com/uploads/12705255/2000_6b062bf06b22ddc45.avif?ratio=7:8&amp;format=avif 2000w
+            "
+            sizes="100vw"
+            data-sizes-auto="1"
+          />
+          <span>&copy; WIKIZE — Roulez simplement.</span>
+        </div>
+      </section>
+    </main>
+    <!-- Explain: Shared site footer, floating WhatsApp/chatbot buttons, welcome modal. -->
+    <!-- ===== PIED DE PAGE COMMUN WIKIZE ===== -->
+    <footer class="site-footer">
+      <div class="container-wk site-footer__grid">
+        <div class="site-footer__col">
+          <a
+            href="#"
+            class="site-footer__brand"
+            aria-label="Retour à l'accueil WIKIZE"
+          >
+            <img
+              class="site-footer__logo"
+              alt="Logo WIKIZE"
+              width="120"
+              height="120"
+              src="../files.cdn-files-a.com/uploads/12705255/100_6b062bf06b22ddc45.avif?ratio=7:8&amp;format=avif"
+              srcset="
+                ../files.cdn-files-a.com/uploads/12705255/100_6b062bf06b22ddc45.avif?ratio=7:8&amp;format=avif   100w,
+                ../files.cdn-files-a.com/uploads/12705255/400_6b062bf06b22ddc45.avif?ratio=7:8&amp;format=avif   400w,
+                ../files.cdn-files-a.com/uploads/12705255/800_6b062bf06b22ddc45.avif?ratio=7:8&amp;format=avif   800w,
+                ../files.cdn-files-a.com/uploads/12705255/1200_6b062bf06b22ddc45.avif?ratio=7:8&amp;format=avif 1200w,
+                ../files.cdn-files-a.com/uploads/12705255/1600_6b062bf06b22ddc45.avif?ratio=7:8&amp;format=avif 1600w,
+                ../files.cdn-files-a.com/uploads/12705255/2000_6b062bf06b22ddc45.avif?ratio=7:8&amp;format=avif 2000w
+              "
+              loading="lazy"
+              sizes="1px"
+              data-sizes-auto="1"
+            />
+          </a>
+          <p>
+            WIKIZE facilite la mobilité en Afrique : location de vélos, motos et
+            voitures, plus des niveaux d'investissement accessibles à tous.
+          </p>
+          <p class="site-footer__tagline">Roulez simplement.</p>
+        </div>
+
+        <div class="site-footer__col">
+          <h3>Liens rapides</h3>
+          <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="niveaux.html">Niveaux d'investissement</a></li>
+            <li><a href="offres.html">Offres &amp; véhicules</a></li>
+            <li><a href="actualite.html">Actualité mobilité</a></li>
+            <li><a href="a-propos.html">À propos de WIKIZE</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col">
+          <h3>Mon espace</h3>
+          <ul>
+            <li><a href="velos.html">Louer un vélo</a></li>
+            <li><a href="motos.html">Louer une moto</a></li>
+            <li><a href="voitures.html">Louer une voiture</a></li>
+            <li><a href="compte.html">Mon compte</a></li>
+            <li><a href="wallet.html">Mon wallet</a></li>
+            <li><a href="parrainage.html">Parrainage — 500 FCFA</a></li>
+            <li><a href="retrait.html">Demander un retrait</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col">
+          <h3>Contact &amp; horaires</h3>
+          <ul class="site-footer__contact">
+            <li>
+              <i class="fa-brands fa-whatsapp"></i>
+              <a href="https://wa.me/22896635790" target="_blank" rel="noopener"
+                >+228 96 63 57 90</a
+              >
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:Wikitogo@gmail.com">Wikitogo@gmail.com</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-location-dot"></i> Lomé, Togo — Afrique de
+              l'Ouest
+            </li>
+            <li><i class="fa-solid fa-clock"></i> Ouvert 7j/7 — 24h/24</li>
+          </ul>
+          <div class="site-footer__socials">
+            <a
+              href="https://wa.me/22896635790"
+              target="_blank"
+              rel="noopener"
+              aria-label="Écrire à WIKIZE sur WhatsApp"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+            <button
+              type="button"
+              data-share="facebook"
+              aria-label="Partager WIKIZE sur Facebook"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </button>
+            <button
+              type="button"
+              data-share="whatsapp"
+              aria-label="Partager WIKIZE sur WhatsApp"
+            >
+              <i class="fa-solid fa-share-nodes"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-wk site-footer__bottom">
+        <p>&copy; 2026 WIKIZE — Roulez simplement. Tous droits réservés.</p>
+        <p>Newsletter : recevez nos offres et actualités mobilité.</p>
+      </div>
+    </footer>
+
+    <!-- ===== BOUTONS FLOTTANTS : WHATSAPP + CHATBOT + RETOUR EN HAUT ===== -->
+    <a
+      class="whatsapp-float"
+      href="https://wa.me/22896635790"
+      target="_blank"
+      rel="noopener"
+      aria-label="Contacter WIKIZE sur WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <button
+      type="button"
+      class="chatbot-fab"
+      id="chatbotToggle"
+      aria-label="Ouvrir l'assistant WIKIZE"
+      aria-expanded="false"
+    >
+      <i class="fa-solid fa-comments"></i>
+    </button>
+
+    <div
+      class="chatbot-panel"
+      id="chatbotPanel"
+      role="dialog"
+      aria-label="Assistant WIKIZE"
+    >
+      <div class="chatbot-panel__head">
+        <img
+          alt="Assistant WIKIZE"
+          width="34"
+          height="34"
+          src="../files.cdn-files-a.com/uploads/12705255/100_6b062bf06b22ddc45.avif?ratio=7:8&amp;format=avif"
+          srcset="
+            ../files.cdn-files-a.com/uploads/12705255/100_6b062bf06b22ddc45.avif?ratio=7:8&amp;format=avif   100w,
+            ../files.cdn-files-a.com/uploads/12705255/400_6b062bf06b22ddc45.avif?ratio=7:8&amp;format=avif   400w,
+            ../files.cdn-files-a.com/uploads/12705255/800_6b062bf06b22ddc45.avif?ratio=7:8&amp;format=avif   800w,
+            ../files.cdn-files-a.com/uploads/12705255/1200_6b062bf06b22ddc45.avif?ratio=7:8&amp;format=avif 1200w,
+            ../files.cdn-files-a.com/uploads/12705255/1600_6b062bf06b22ddc45.avif?ratio=7:8&amp;format=avif 1600w,
+            ../files.cdn-files-a.com/uploads/12705255/2000_6b062bf06b22ddc45.avif?ratio=7:8&amp;format=avif 2000w
+          "
+          loading="lazy"
+          sizes="1px"
+          data-sizes-auto="1"
+        />
+        <div>
+          <strong>Assistant WIKIZE</strong>
+          <small>En ligne 24h/24</small>
+        </div>
+        <button type="button" id="chatbotClose" aria-label="Fermer le chat">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="chatbot-panel__log" id="chatbotLog"></div>
+      <div class="chatbot-panel__quick" id="chatbotQuick"></div>
+      <form class="chatbot-panel__form" id="chatbotForm">
+        <input
+          type="text"
+          id="chatbotInput"
+          placeholder="Écrivez votre question…"
+          aria-label="Votre message"
+          autocomplete="off"
+        />
+        <button type="submit" aria-label="Envoyer le message">
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+
+    <button type="button" id="backToTop" aria-label="Retour en haut de la page">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- ===== MODALE DE BIENVENUE ===== -->
+    <div
+      class="modal-wk"
+      id="welcomeModal"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Bienvenue chez WIKIZE"
+    >
+      <div class="modal-wk__box">
+        <button
+          type="button"
+          class="modal-wk__close"
+          data-modal-close
+          aria-label="Fermer"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <img
+          class="modal-wk__logo"
+          alt="WIKIZE"
+          width="62"
+          height="62"
+          src="../files.cdn-files-a.com/uploads/12705255/100_6b062bf06b22ddc45.avif?ratio=7:8&amp;format=avif"
+          srcset="
+            ../files.cdn-files-a.com/uploads/12705255/100_6b062bf06b22ddc45.avif?ratio=7:8&amp;format=avif   100w,
+            ../files.cdn-files-a.com/uploads/12705255/400_6b062bf06b22ddc45.avif?ratio=7:8&amp;format=avif   400w,
+            ../files.cdn-files-a.com/uploads/12705255/800_6b062bf06b22ddc45.avif?ratio=7:8&amp;format=avif   800w,
+            ../files.cdn-files-a.com/uploads/12705255/1200_6b062bf06b22ddc45.avif?ratio=7:8&amp;format=avif 1200w,
+            ../files.cdn-files-a.com/uploads/12705255/1600_6b062bf06b22ddc45.avif?ratio=7:8&amp;format=avif 1600w,
+            ../files.cdn-files-a.com/uploads/12705255/2000_6b062bf06b22ddc45.avif?ratio=7:8&amp;format=avif 2000w
+          "
+          loading="lazy"
+          sizes="1px"
+          data-sizes-auto="1"
+        />
+        <h3>Bienvenue chez WIKIZE 🎉</h3>
+        <p class="wk-hint" style="margin: 0.6rem 0 1.1rem">
+          Créez votre compte en 30 secondes et recevez
+          <strong>1000 FCFA offerts</strong> directement dans votre wallet.
+          Louez un vélo, une moto ou une voiture, ou choisissez un niveau
+          d'investissement.
+        </p>
+        <div style="display: grid; gap: 0.55rem">
+          <a class="btn-wk btn-wk--accent" href="compte.html"
+            >Créer mon compte + 1000 FCFA</a
+          >
+          <a class="btn-wk btn-wk--primary" href="niveaux.html"
+            >Voir les niveaux d'investissement</a
+          >
+          <button
+            type="button"
+            class="btn-wk btn-wk--ghost"
+            data-modal-close
+            style="background: var(--surface-color); color: var(--text-color)"
+          >
+            Continuer la visite
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="../cdn-cms-s-8-4.f-static.net/manager/ai_app_builder/v3/assets/js/storea135.js?t=css_y254_67566533&amp;w=12705255"></script>
+    <script src="../cdn-cms-s-8-4.f-static.net/manager/ai_app_builder/v3/assets/js/appa135.js?t=css_y254_67566533&amp;w=12705255"></script>
+    <script src="../cdn-cms-s-8-4.f-static.net/manager/ai_app_builder/v3/assets/js/actualitea135.js?t=css_y254_67566533&amp;w=12705255"></script>
+    <script src="../cdn-cms-s-8-4.f-static.net/manager/ai_app_builder/v3/assets/js/chatbota135.js?t=css_y254_67566533&amp;w=12705255"></script>
+    <script>
+      var packageNUM = 1;
+    </script>
+    
+    <script
+      src="../cdn-cms-s-8-4.f-static.net/manager/translation_JS/website_jsTranslationsb392.js?l=fr&amp;a=1&amp;v=vc1795534278"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var siteRefTxt =
+        "5xdBU4qjIASQQwP2CaZ+U3JaUi8vcS96aFRNSDBNNXN3ZktGNGc9PQ==";
+    </script>
+    <script
+      src="../cdn-cms-s-8-4.f-static.net/versions/2/system_mini/js/minimize_appBuilder_scripts_v351a9.js?v=vc1795534278"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="../cdn-cms-s-8-4.f-static.net/versions/2/system_mini/js/minimize_appBuilderStatistics_scripts_v351a9.js?v=vc1795534278"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+
+  <!-- Mirrored from https://6b062bde12b0f.site123.me/actualite.html by HTTrack Website Copier/3.x [XR&CO], Wed, 25 Nov 2026 04:01:54 GMT -->
+</html>
